@@ -36,3 +36,63 @@ NO_PLATE_DETECTION/
 │ └── (saved plate images)
 ├── venv/
 └── README.md
+
+---
+
+## ⚙️ Installation & Setup
+
+### 
+1️⃣ Create and activate virtual environment
+python -m venv venv
+venv\Scripts\activate
+2️⃣ Install required libraries
+pip install opencv-python pytesseract
+3️⃣ Install Tesseract OCR (Windows)
+Download from: https://github.com/UB-Mannheim/tesseract/wiki
+
+During installation, select Add to PATH
+
+▶️ How to Run the Project
+python number_plate.py
+⌨️ Controls
+s → Save detected number plate image
+
+ESC → Exit the program
+
+🔄 Working Flow
+Capture live video from webcam
+
+Convert frame to grayscale
+
+Detect number plate using Haar Cascade
+
+Draw bounding box around plate
+
+Extract plate region (ROI)
+
+Preprocess image for OCR
+
+Extract text using Tesseract OCR
+
+Display and save results
+
+🧪 Applications
+Traffic monitoring systems
+
+Automated parking systems
+
+Toll booth automation
+
+Vehicle identification systems
+
+Smart city applications
+
+⚠️ Notes
+Detection accuracy depends on lighting and camera quality
+
+Haar Cascade works best for frontal and clear number plates
+
+OCR accuracy improves with proper preprocessing
+
+🎓 Project Description (Short)
+This project demonstrates real-time vehicle number plate detection and recognition using OpenCV and OCR techniques for intelligent transportation systems.
